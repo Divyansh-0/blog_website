@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background-image: url(a.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      text-align: center;
+      justify-content: center;
+   
+  }
+  
+.main_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.title{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: xx-large;
+  padding: 15px;
+  position: relative;
+font-size: 1em;
+color: #0e3742;
+text-transform: uppercase;
+text-align: center;
+letter-spacing: 2px;
+
+outline: none;
+animation: textd 5s linear infinite;
+ }
+@keyframes textd {
+  0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%{
+    color: #0e3742;
+    text-shadow: none;
+  }
+  18.1%,20.1%,30%,50%, 60.1% ,65%, 80.1%, 90.1%, 92.1%,100%{
+color: #ffff;
+text-shadow: 0 0 10px #03bcf4,
+0 0 20px #03bcf4, 0 0 30px #03bcf4, 0 0 40px #03bcf4;
+  }
+
+}
+
+
+
+
+.image{
+  background-image: url(project.jpg);
+padding-top: 50px;
+    display: flex;
+    width: 788px;
+    height: 577px;
+}
+#one{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+ color: brown;
+ font-size: x-large;
+ opacity: 80%;
+ width: auto;
+ height: 100px;
+ background-color: aliceblue;
+}
+.login_page{
+  display: flex;
+    margin: auto;
+  
+  }
+  .form {
+  position: relative;
+    z-index: 1;
+    background: #eb7fb9;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    
+  }
+  .form input {
+    font-family: FontAwesome, "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  border-radius:10px;
+    
+  }
+  .form button {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    outline: 0;
+    background: #ccfaf1;
+    width: 100%;
+    border: 0;
+  border-radius:30px;
+    margin: 0px 0px 8px;
+    padding: 15px;
+    color: #f65f5f;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: all 0.2s;
+  
+  }
+  .form button:hover,.form button:focus {
+    background: #9f3388;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+    color: white;
+  }
+  .form button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .form .message {
+    
+    margin: 6px 6px;
+    color: #808080;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+    font-style: normal;
+  
+    
+  
+  }
+  .form .message a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+  }
+  .container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #000000;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+  button a{
+    text-decoration: none;
+    color: #f65f5f;
+  }
+  button a:hover{
+    transform: translate(-4px);
+    color: white;
+  }
+  .upload{
+    width: 100px;
+    position: relative;
+    margin: auto;
+  }
+  .upload img{
+    border-radius: 50%;
+    border: 6px solid rgb(247, 194, 194);
+  }
+  .upload .round{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #0b1823;
+    color: white;
+    width: 32px;
+    height: 32px;
+   line-height:  32px;
+   overflow: hidden;
+   text-align: center;
+   border-radius: 50%;
+  }
+  .upload .round input[type ='file']{
+    position: absolute;
+    transform: scale(2);
+    opacity:0;
+  }
+  input[type ='file']::-webkit-file-upload-button{
+    cursor: pointer;
+  }
+  @media (max-width:760px) {
+    .main_container{
+      flex-direction: column;
+    }
+    .image{
+      width: 400px;
+      align-items: flex-start;
+      opacity: 0.8;
+    }
+    
+    .login-page {
+      margin-top: 80px;
+  }
+  }
