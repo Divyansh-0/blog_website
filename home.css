@@ -12,7 +12,8 @@ body{
 .head_bar{
     display: flex;
    align-items: flex-start;
-   top: 400px;
+   margin-top: 15px;
+    margin-left:6px;
   
 }
 .blog_content{
